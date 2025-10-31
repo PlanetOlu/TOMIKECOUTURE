@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMIKE COUTURE - Modern African Fashion | Ankara & Lace Clothing</title>
+    <meta name="description" content="Discover modern African fashion with bold Ankara prints and timeless lace. Shop ready-to-wear collections and custom outfits where heritage meets contemporary style." />
+    <meta name="author" content="Tomike Couture" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <meta property="og:title" content="TOMIKE COUTURE - Modern African Fashion" />
+    <meta property="og:description" content="Where African Heritage Meets Modern Style. Discover bold Ankara prints and timeless lace reimagined for today." />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+</head>
+
+<body>
+    <div class="min-h-screen">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full bg-background-blur backdrop-blur-sm border-b border-border z-50">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <a href="/" class="font-display text-2xl font-bold text-gradient-earth hover:opacity-80 transition-opacity">
+                            TOMIKE COUTURE
+                        </a>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="/women" class="nav-link">Women</a>
+                        <a href="/men" class="nav-link">Men</a>
+                        <a href="/custom" class="nav-link">Custom</a>
+                        <a href="/journal" class="nav-link">Journal</a>
+                        <a href="/community" class="nav-link">Community</a>
+                        <a href="/about" class="nav-link">About</a>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex items-center space-x-4">
+                        <button class="nav-icon-button" id="search-btn">
+                            <i data-lucide="search" class="h-5 w-5"></i>
+                        </button>
+                        <button class="nav-icon-button" id="user-btn">
+                            <i data-lucide="user" class="h-5 w-5"></i>
+                        </button>
+                        <button class="nav-icon-button" id="cart-btn">
+                            <i data-lucide="shopping-bag" class="h-5 w-5"></i>
+                        </button>
+                        
+                        <!-- Mobile menu button -->
+                        <button class="md:hidden nav-icon-button" id="mobile-menu-btn">
+                            <i data-lucide="menu" class="h-5 w-5" id="menu-icon"></i>
+                            <i data-lucide="x" class="h-5 w-5 hidden" id="close-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div class="md:hidden border-t border-border bg-background mobile-menu hidden" id="mobile-menu">
+                    <div class="px-2 pt-2 pb-3 space-y-1">
+                        <a href="/women" class="mobile-nav-link">Women</a>
+                        <a href="/men" class="mobile-nav-link">Men</a>
+                        <a href="/custom" class="mobile-nav-link">Custom</a>
+                        <a href="/journal" class="mobile-nav-link">Journal</a>
+                        <a href="/community" class="mobile-nav-link">Community</a>
+                        <a href="/about" class="mobile-nav-link">About</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-earth">
+                <!-- Background Image -->
+                <div class="absolute inset-0 z-0">
+                    <img src="src/assets/hero-image.jpg" alt="Modern African fashion hero image" class="w-full h-full object-cover opacity-40">
+                    <div class="absolute inset-0 bg-gradient-earth opacity-80"></div>
+                </div>
+
+                <!-- Content -->
+                <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+                    <div class="fade-in-up">
+                        <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
+                            Where African Fabrics<br>
+                            <span class="text-gradient">Meets Modern Elegance</span>
+                        </h1>
+                        
+                        <p class="font-body text-lg md:text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
+                            From bold Ankara button-ups to timeless lace pieces, we craft contemporary African fashion that celebrates heritage while embracing modern sophistication.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                            <button class="hero-button group">
+                                Discover Our Collections
+                                <i data-lucide="arrow-right" class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"></i>
+                            </button>
+                            <button class="hero-button-outline group">
+                                Custom Orders
+                                <i data-lucide="sparkles" class="ml-2 h-5 w-5 group-hover:animate-pulse"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Featured Collection Section -->
+            <section class="py-20 bg-background">
+                <div class="container mx-auto px-4">
+                    <!-- Section Header -->
+                    <div class="text-center mb-16">
+                        <h2 class="section-title mb-6">
+                            This Season's <span class="text-gradient">Signature Pieces</span>
+                        </h2>
+                        <p class="section-subtitle mx-auto">
+                            From tailored button-ups to statement dungarees, our latest drop celebrates 
+                            craftsmanship, culture, and confidence.
+                        </p>
+                    </div>
+
+                    <!-- Product Carousel -->
+                    <div class="relative">
+                        <!-- Carousel Container -->
+                        <div class="carousel-container overflow-hidden">
+                            <div class="carousel-track flex transition-transform duration-300 ease-in-out gap-8" id="featured-carousel">
+                                <!-- Product 1 -->
+                                <div class="carousel-item flex-shrink-0 w-80">
+                                    <div class="product-card group hover-lift cursor-pointer border-0 shadow-elegant hover:shadow-hover transition-all duration-300">
+                                        <div class="p-0">
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden rounded-t-lg">
+                                                <div class="relative overflow-hidden">
+                                                    <img src="src/assets/collection-preview.jpg" alt="Ankara Button-Up Ezinne - Modern African fashion piece" class="product-image w-full h-80 object-cover transition-transform duration-500">
+                                                    <img src="src/assets/collection-preview.jpg" alt="Ankara Button-Up Ezinne - Alternative view" class="product-image-hover absolute inset-0 w-full h-80 object-cover opacity-0 group-hover:opacity-100 transition-all duration-500" style="filter: hue-rotate(15deg) brightness(1.1);">
+                                                </div>
+                                                
+                                                <!-- Tags -->
+                                                <div class="absolute top-4 left-4 flex flex-col gap-2">
+                                                    <span class="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-xs font-medium">New</span>
+                                                </div>
+
+                                                <!-- Wishlist -->
+                                                <button class="wishlist-btn absolute top-4 right-4 bg-white-80 hover:bg-white hover:text-secondary opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                                    <i data-lucide="heart" class="h-4 w-4"></i>
+                                                </button>
+
+                                                <!-- Quick Actions -->
+                                                <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                                    <button class="w-full hero-button text-sm">Quick Add</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Product Info -->
+                                            <div class="p-6">
+                                                <div class="mb-2">
+                                                    <span class="text-xs font-medium text-muted-foreground uppercase tracking-wider">Shirts</span>
+                                                </div>
+                                                <h3 class="font-display text-lg font-semibold text-foreground mb-2 group-hover:text-secondary transition-colors">
+                                                    Ankara Button-Up "Ezinne"
+                                                </h3>
+                                                <p class="font-body text-xl font-bold text-foreground">₦45,000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 2 -->
+                                <div class="carousel-item flex-shrink-0 w-80">
+                                    <div class="product-card group hover-lift cursor-pointer border-0 shadow-elegant hover:shadow-hover transition-all duration-300">
+                                        <div class="p-0">
+                                            <div class="relative overflow-hidden rounded-t-lg">
+                                                <div class="relative overflow-hidden">
+                                                    <img src="src/assets/collection-preview.jpg" alt="Lace Midi Dress Amara - Modern African fashion piece" class="product-image w-full h-80 object-cover transition-transform duration-500">
+                                                    <img src="src/assets/collection-preview.jpg" alt="Lace Midi Dress Amara - Alternative view" class="product-image-hover absolute inset-0 w-full h-80 object-cover opacity-0 group-hover:opacity-100 transition-all duration-500" style="filter: hue-rotate(15deg) brightness(1.1);">
+                                                </div>
+                                                
+                                                <div class="absolute top-4 left-4 flex flex-col gap-2">
+                                                    <span class="bg-foreground text-background px-3 py-1 rounded-full text-xs font-medium">Best Seller</span>
+                                                </div>
+
+                                                <button class="wishlist-btn absolute top-4 right-4 bg-white-80 hover:bg-white hover:text-secondary opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                                    <i data-lucide="heart" class="h-4 w-4"></i>
+                                                </button>
+
+                                                <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                                    <button class="w-full hero-button text-sm">Quick Add</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="p-6">
+                                                <div class="mb-2">
+                                                    <span class="text-xs font-medium text-muted-foreground uppercase tracking-wider">Dresses</span>
+                                                </div>
+                                                <h3 class="font-display text-lg font-semibold text-foreground mb-2 group-hover:text-secondary transition-colors">
+                                                    Lace Midi Dress "Amara"
+                                                </h3>
+                                                <p class="font-body text-xl font-bold text-foreground">₦65,000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 3 -->
+                                <div class="carousel-item flex-shrink-0 w-80">
+                                    <div class="product-card group hover-lift cursor-pointer border-0 shadow-elegant hover:shadow-hover transition-all duration-300">
+                                        <div class="p-0">
+                                            <div class="relative overflow-hidden rounded-t-lg">
+                                                <div class="relative overflow-hidden">
+                                                    <img src="src/assets/collection-preview.jpg" alt="Ankara Cargo Set Kemi - Modern African fashion piece" class="product-image w-full h-80 object-cover transition-transform duration-500">
+                                                    <img src="src/assets/collection-preview.jpg" alt="Ankara Cargo Set Kemi - Alternative view" class="product-image-hover absolute inset-0 w-full h-80 object-cover opacity-0 group-hover:opacity-100 transition-all duration-500" style="filter: hue-rotate(15deg) brightness(1.1);">
+                                                </div>
+                                                
+                                                <div class="absolute top-4 left-4 flex flex-col gap-2">
+                                                    <span class="bg-gradient-warm text-white px-3 py-1 rounded-full text-xs font-medium">Limited Edition</span>
+                                                </div>
+
+                                                <button class="wishlist-btn absolute top-4 right-4 bg-white-80 hover:bg-white hover:text-secondary opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                                    <i data-lucide="heart" class="h-4 w-4"></i>
+                                                </button>
+
+                                                <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                                    <button class="w-full hero-button text-sm">Quick Add</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="p-6">
+                                                <div class="mb-2">
+                                                    <span class="text-xs font-medium text-muted-foreground uppercase tracking-wider">Sets</span>
+                                                </div>
+                                                <h3 class="font-display text-lg font-semibold text-foreground mb-2 group-hover:text-secondary transition-colors">
+                                                    Ankara Cargo Set "Kemi"
+                                                </h3>
+                                                <p class="font-body text-xl font-bold text-foreground">₦75,000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 4 -->
+                                <div class="carousel-item flex-shrink-0 w-80">
+                                    <div class="product-card group hover-lift cursor-pointer border-0 shadow-elegant hover:shadow-hover transition-all duration-300">
+                                        <div class="p-0">
+                                            <div class="relative overflow-hidden rounded-t-lg">
+                                                <div class="relative overflow-hidden">
+                                                    <img src="src/assets/collection-preview.jpg" alt="Contemporary Dungaree - Modern African fashion piece" class="product-image w-full h-80 object-cover transition-transform duration-500">
+                                                    <img src="src/assets/collection-preview.jpg" alt="Contemporary Dungaree - Alternative view" class="product-image-hover absolute inset-0 w-full h-80 object-cover opacity-0 group-hover:opacity-100 transition-all duration-500" style="filter: hue-rotate(15deg) brightness(1.1);">
+                                                </div>
+                                                
+                                                <div class="absolute top-4 left-4 flex flex-col gap-2">
+                                                    <span class="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-xs font-medium">New</span>
+                                                </div>
+
+                                                <button class="wishlist-btn absolute top-4 right-4 bg-white-80 hover:bg-white hover:text-secondary opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                                    <i data-lucide="heart" class="h-4 w-4"></i>
+                                                </button>
+
+                                                <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                                    <button class="w-full hero-button text-sm">Quick Add</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="p-6">
+                                                <div class="mb-2">
+                                                    <span class="text-xs font-medium text-muted-foreground uppercase tracking-wider">Casual</span>
+                                                </div>
+                                                <h3 class="font-display text-lg font-semibold text-foreground mb-2 group-hover:text-secondary transition-colors">
+                                                    Contemporary Dungaree
+                                                </h3>
+                                                <p class="font-body text-xl font-bold text-foreground">₦55,000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 5 -->
+                                <div class="carousel-item flex-shrink-0 w-80">
+                                    <div class="product-card group hover-lift cursor-pointer border-0 shadow-elegant hover:shadow-hover transition-all duration-300">
+                                        <div class="p-0">
+                                            <div class="relative overflow-hidden rounded-t-lg">
+                                                <div class="relative overflow-hidden">
+                                                    <img src="src/assets/lookbook-featured.jpg" alt="Ankara Blazer Set - Modern African fashion piece" class="product-image w-full h-80 object-cover transition-transform duration-500">
+                                                    <img src="src/assets/lookbook-featured.jpg" alt="Ankara Blazer Set - Alternative view" class="product-image-hover absolute inset-0 w-full h-80 object-cover opacity-0 group-hover:opacity-100 transition-all duration-500" style="filter: hue-rotate(15deg) brightness(1.1);">
+                                                </div>
+                                                
+                                                <div class="absolute top-4 left-4 flex flex-col gap-2">
+                                                    <span class="bg-gradient-warm text-white px-3 py-1 rounded-full text-xs font-medium">Limited Edition</span>
+                                                </div>
+
+                                                <button class="wishlist-btn absolute top-4 right-4 bg-white-80 hover:bg-white hover:text-secondary opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                                    <i data-lucide="heart" class="h-4 w-4"></i>
+                                                </button>
+
+                                                <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                                    <button class="w-full hero-button text-sm">Quick Add</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="p-6">
+                                                <div class="mb-2">
+                                                    <span class="text-xs font-medium text-muted-foreground uppercase tracking-wider">Formal</span>
+                                                </div>
+                                                <h3 class="font-display text-lg font-semibold text-foreground mb-2 group-hover:text-secondary transition-colors">
+                                                    Ankara Blazer Set "Adunni"
+                                                </h3>
+                                                <p class="font-body text-xl font-bold text-foreground">₦85,000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <button class="carousel-btn carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow-elegant hover:shadow-hover" id="featured-prev">
+                            <i data-lucide="chevron-left" class="h-6 w-6"></i>
+                        </button>
+                        <button class="carousel-btn carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow-elegant hover:shadow-hover" id="featured-next">
+                            <i data-lucide="chevron-right" class="h-6 w-6"></i>
+                        </button>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="text-center mt-16">
+                        <button class="hero-button group">
+                            View Full Collection
+                            <i data-lucide="arrow-right" class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Section -->
+            <section class="py-20 bg-gradient-subtle">
+                <div class="container mx-auto px-4">
+                    <!-- Section Header -->
+                    <div class="text-center mb-16">
+                        <h2 class="section-title mb-6">
+                            <span class="text-gradient">You Wear It Best</span>
+                        </h2>
+                        <p class="section-subtitle mx-auto max-w-2xl">
+                            Our community brings our pieces to life. Tag us
+                            <span class="font-semibold text-secondary">@tomikecouture</span> or use
+                            <span class="font-semibold text-secondary">#TomikeStyle</span> to be featured in our gallery.
+                        </p>
+                    </div>
+                    
+
+                    <!-- Community Carousel -->
+                    <div class="relative">
+                        <div class="carousel-container overflow-hidden">
+                            <div class="carousel-track flex transition-transform duration-300 ease-in-out gap-6" id="community-carousel">
+                                <!-- Community Post 1 -->
+                                <div class="carousel-item flex-shrink-0 w-72">
+                                    <div class="instagram-grid-item group cursor-pointer border-0 shadow-elegant hover:shadow-hover transition-all duration-300">
+                                        <div class="p-0 relative">
+                                            <div class="aspect-square overflow-hidden rounded-lg">
+                                                <img src="src/assets/collection-preview.jpg" alt="@amara_styles wearing Ankara Button-Up Ezinne" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                                
+                                                <!-- Overlay -->
+                                                <div class="absolute inset-0 bg-gradient-to-t from-black-80 via-black-20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                                                        <div class="flex items-center justify-between mb-2">
+                                                            <span class="font-medium">@amara_styles</span>
+                                                            <div class="flex items-center gap-3">
+                                                                <div class="flex items-center gap-1">
+                                                                    <i data-lucide="heart" class="h-4 w-4"></i>
+                                                                    <span class="text-sm">127</span>
+                                                                </div>
+                                                                <div class="flex items-center gap-1">
+                                                                    <i data-lucide="message-circle" class="h-4 w-4"></i>
+                                                                    <span class="text-sm">23</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-sm font-medium mb-1">Ankara Button-Up 'Ezinne'</p>
+                                                        <p class="text-xs text-white-80">Lagos, Nigeria</p>
+                                                    </div>
+
+                                                    <!-- Shop This Look Button -->
+                                                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                                        <button class="hero-button text-xs">
+                                                            Shop Look
+                                                            <i data-lucide="external-link" class="ml-1 h-3 w-3"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Community Post 2 -->
+                                <div class="carousel-item flex-shrink-0 w-72">
+                                    <div class="instagram-grid-item group cursor-pointer border-0 shadow-elegant hover:shadow-hover transition-all duration-300">
+                                        <div class="p-0 relative">
+                                            <div class="aspect-square overflow-hidden rounded-lg">
+                                                <img src="src/assets/lookbook-featured.jpg" alt="@kemi_fashion wearing Lace Midi Dress Amara" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-black-80 via-black-20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                                                        <div class="flex items-center justify-between mb-2">
+                                                            <span class="font-medium">@kemi_fashion</span>
+                                                            <div class="flex items-center gap-3">
+                                                                <div class="flex items-center gap-1">
+                                                                    <i data-lucide="heart" class="h-4 w-4"></i>
+                                                                    <span class="text-sm">89</span>
+                                                                </div>
+                                                                <div class="flex items-center gap-1">
+                                                                    <i data-lucide="message-circle" class="h-4 w-4"></i>
+                                                                    <span class="text-sm">15</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-sm font-medium mb-1">Lace Midi Dress 'Amara'</p>
+                                                        <p class="text-xs text-white-80">Accra, Ghana</p>
+                                                    </div>
+                                                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                                        <button class="hero-button text-xs">
+                                                            Shop Look
+                                                            <i data-lucide="external-link" class="ml-1 h-3 w-3"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Community Post 3 -->
+                                <div class="carousel-item flex-shrink-0 w-72">
+                                    <div class="instagram-grid-item group cursor-pointer border-0 shadow-elegant hover:shadow-hover transition-all duration-300">
+                                        <div class="p-0 relative">
+                                            <div class="aspect-square overflow-hidden rounded-lg">
+                                                <img src="src/assets/hero-image.jpg" alt="@tomike_lover wearing Cargo Set Kemi" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-black-80 via-black-20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                                                        <div class="flex items-center justify-between mb-2">
+                                                            <span class="font-medium">@tomike_lover</span>
+                                                            <div class="flex items-center gap-3">
+                                                                <div class="flex items-center gap-1">
+                                                                    <i data-lucide="heart" class="h-4 w-4"></i>
+                                                                    <span class="text-sm">203</span>
+                                                                </div>
+                                                                <div class="flex items-center gap-1">
+                                                                    <i data-lucide="message-circle" class="h-4 w-4"></i>
+                                                                    <span class="text-sm">41</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-sm font-medium mb-1">Cargo Set 'Kemi'</p>
+                                                        <p class="text-xs text-white-80">London, UK</p>
+                                                    </div>
+                                                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                                        <button class="hero-button text-xs">
+                                                            Shop Look
+                                                            <i data-lucide="external-link" class="ml-1 h-3 w-3"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Community Post 4 -->
+                                <div class="carousel-item flex-shrink-0 w-72">
+                                    <div class="instagram-grid-item group cursor-pointer border-0 shadow-elegant hover:shadow-hover transition-all duration-300">
+                                        <div class="p-0 relative">
+                                            <div class="aspect-square overflow-hidden rounded-lg">
+                                                <img src="src/assets/collection-preview.jpg" alt="@style_maven wearing Contemporary Dungaree" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-black-80 via-black-20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                                                        <div class="flex items-center justify-between mb-2">
+                                                            <span class="font-medium">@style_maven</span>
+                                                            <div class="flex items-center gap-3">
+                                                                <div class="flex items-center gap-1">
+                                                                    <i data-lucide="heart" class="h-4 w-4"></i>
+                                                                    <span class="text-sm">156</span>
+                                                                </div>
+                                                                <div class="flex items-center gap-1">
+                                                                    <i data-lucide="message-circle" class="h-4 w-4"></i>
+                                                                    <span class="text-sm">32</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-sm font-medium mb-1">Contemporary Dungaree</p>
+                                                        <p class="text-xs text-white-80">New York, USA</p>
+                                                    </div>
+                                                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                                        <button class="hero-button text-xs">
+                                                            Shop Look
+                                                            <i data-lucide="external-link" class="ml-1 h-3 w-3"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <button class="carousel-btn carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow-elegant hover:shadow-hover" id="community-prev">
+                            <i data-lucide="chevron-left" class="h-6 w-6"></i>
+                        </button>
+                        <button class="carousel-btn carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow-elegant hover:shadow-hover" id="community-next">
+                            <i data-lucide="chevron-right" class="h-6 w-6"></i>
+                        </button>
+                    </div>
+
+                    <!-- Instagram CTA -->
+                    <div class="text-center mt-16">
+                        <div class="inline-flex items-center gap-4 bg-card-80 backdrop-blur-sm rounded-full px-8 py-4 shadow-soft">
+                            <i data-lucide="instagram" class="h-6 w-6 text-secondary"></i>
+                            <span class="font-medium">Follow us for daily inspiration</span>
+                            <button class="rounded-full border-secondary text-secondary hover:bg-secondary hover:text-white px-4 py-2 text-sm border transition-colors">
+                                @tomikecouture
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Journal Section -->
+            <section class="py-20 bg-background">
+                <div class="container mx-auto px-4">
+                    <!-- Section Header -->
+                    <div class="text-center mb-16">
+                        <h2 class="section-title mb-6">
+                            Style <span class="text-gradient">Journal</span>
+                        </h2>
+                        <p class="section-subtitle mx-auto">
+                            Discover our latest lookbook featuring real women styling our pieces. 
+                            Get inspired and shop the complete looks.
+                        </p>
+                    </div>
+
+                    <!-- Journal Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                        <!-- Look 1 -->
+                        <article class="group cursor-pointer">
+                            <div class="relative overflow-hidden rounded-lg mb-6 aspect-[4/5]">
+                                <img src="src/assets/lookbook-featured.jpg" alt="Office Ready: Ankara Blazer with Contemporary Bottoms" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black-80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                    <div class="absolute bottom-6 left-6 right-6">
+                                        <button class="hero-button w-full">
+                                            Shop This Look
+                                            <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+                        <!-- Look 2 -->
+                        <article class="group cursor-pointer">
+                            <div class="relative overflow-hidden rounded-lg mb-6 aspect-[4/5]">
+                                <img src="src/assets/collection-preview.jpg" alt="Weekend Vibes: Casual Ankara with Denim" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black-80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                    <div class="absolute bottom-6 left-6 right-6">
+                                        <button class="hero-button w-full">
+                                            Shop This Look
+                                            <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        <!-- Look 3 -->
+                        <article class="group cursor-pointer">
+                            <div class="relative overflow-hidden rounded-lg mb-6 aspect-[4/5]">
+                                <img src="src/assets/hero-image.jpg" alt="Evening Elegance: Lace and Gold Accents" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black-80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                    <div class="absolute bottom-6 left-6 right-6">
+                                        <button class="hero-button w-full">
+                                            Shop This Look
+                                            <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="text-center">
+                        <button class="hero-button-outline group">
+                            View Journal
+                            <i data-lucide="arrow-right" class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Your Vision Our Craft Section -->
+            <section class="py-20 bg-gradient-subtle">
+                <div class="container mx-auto px-4">
+                    <div class="grid md:grid-cols-2 gap-16 items-center">
+                        <!-- Content -->
+                        <div>
+                            <h2 class="section-title mb-8">
+                                Your Vision, <span class="text-gradient">Our Craft</span>
+                            </h2>
+                            <p class="section-subtitle mb-8">
+                                Every piece tells a story. From the bustling markets of Lagos to contemporary ateliers, 
+                                we blend traditional African craftsmanship with modern design sensibilities.
+                            </p>
+                            
+                            <div class="space-y-6 mb-10">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i data-lucide="scissors" class="h-6 w-6 text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-display text-lg font-semibold mb-2">Expert Tailoring</h3>
+                                        <p class="text-muted-foreground">
+                                            Each garment is meticulously crafted by skilled artisans who understand both heritage and contemporary fit.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i data-lucide="palette" class="h-6 w-6 text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-display text-lg font-semibold mb-2">Authentic Prints</h3>
+                                        <p class="text-muted-foreground">
+                                            We source genuine Ankara and lace fabrics directly from African textile artisans and mills.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i data-lucide="heart-handshake" class="h-6 w-6 text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-display text-lg font-semibold mb-2">Personal Touch</h3>
+                                        <p class="text-muted-foreground">
+                                            Every custom order is a collaboration between you and our design team to create something uniquely yours.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="hero-button group">
+                                Start Your Custom Journey
+                                <i data-lucide="arrow-right" class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Image -->
+                        <div class="relative">
+                            <div class="aspect-[4/5] rounded-lg overflow-hidden shadow-elegant">
+                                <img src="src/assets/collection-preview.jpg" alt="African fabric artisan at work" class="w-full h-full object-cover">
+                            </div>
+                            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary rounded-full flex items-center justify-center shadow-hover">
+                                <div class="text-center text-white">
+                                    <div class="font-bold text-2xl">5+</div>
+                                    <div class="text-xs uppercase tracking-wider">Years Crafting</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Custom Orders Section -->
+            <section class="py-20 bg-background">
+                <div class="container mx-auto px-4">
+                    <!-- Section Header -->
+                    <div class="text-center mb-16">
+                        <h2 class="section-title mb-6">
+                            How Custom <span class="text-gradient">Orders Work</span>
+                        </h2>
+                        <p class="section-subtitle mx-auto">
+                            From concept to creation, we guide you through every step of bringing your vision to life.
+                        </p>
+                    </div>
+
+                    <!-- Process Steps -->
+                    <div class="grid md:grid-cols-3 gap-8 mb-16">
+                        <!-- Step 1 -->
+                        <div class="text-center group">
+                            <div class="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-hover transition-all duration-300">
+                                <span class="text-white text-2xl font-bold">1</span>
+                            </div>
+                            <h3 class="font-display text-xl font-semibold mb-4">Consultation</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                Schedule a personal consultation where we discuss your vision, measurements, and fabric preferences.
+                            </p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="text-center group">
+                            <div class="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-hover transition-all duration-300">
+                                <span class="text-white text-2xl font-bold">2</span>
+                            </div>
+                            <h3 class="font-display text-xl font-semibold mb-4">Design & Creation</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                Our artisans craft your piece with careful attention to every detail, keeping you updated throughout.
+                            </p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="text-center group">
+                            <div class="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-hover transition-all duration-300">
+                                <span class="text-white text-2xl font-bold">3</span>
+                            </div>
+                            <h3 class="font-display text-xl font-semibold mb-4">Perfect Fit</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                Final fitting ensures your custom piece fits perfectly, with any adjustments made to your satisfaction.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Popular Custom Collections -->
+                    <div class="bg-gradient-subtle rounded-lg p-8">
+                        <div class="text-center mb-12">
+                            <h3 class="font-display text-2xl font-semibold mb-4">Popular Custom Collections</h3>
+                            <p class="text-muted-foreground">
+                                Explore our most requested custom designs and make them uniquely yours.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <!-- Bridal Collection -->
+                            <div class="bg-card rounded-lg p-6 text-center shadow-elegant hover:shadow-hover transition-all duration-300 group cursor-pointer">
+                                <div class="w-16 h-16 bg-gradient-warm rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i data-lucide="heart" class="h-8 w-8 text-white"></i>
+                                </div>
+                                <h4 class="font-display text-lg font-semibold mb-2 group-hover:text-secondary transition-colors">Bridal Collection</h4>
+                                <p class="text-muted-foreground text-sm mb-4">Traditional meets modern in our custom bridal pieces</p>
+                                <button class="hero-button-outline">Explore Designs</button>
+                            </div>
+
+                            <!-- Corporate Wear -->
+                            <div class="bg-card rounded-lg p-6 text-center shadow-elegant hover:shadow-hover transition-all duration-300 group cursor-pointer">
+                                <div class="w-16 h-16 bg-gradient-warm rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i data-lucide="briefcase" class="h-8 w-8 text-white"></i>
+                                </div>
+                                <h4 class="font-display text-lg font-semibold mb-2 group-hover:text-secondary transition-colors">Corporate Wear</h4>
+                                <p class="text-muted-foreground text-sm mb-4">Professional attire with African heritage prints</p>
+                                <button class="hero-button-outline">View Collection</button>
+                            </div>
+
+                            <!-- Special Occasions -->
+                            <div class="bg-card rounded-lg p-6 text-center shadow-elegant hover:shadow-hover transition-all duration-300 group cursor-pointer">
+                                <div class="w-16 h-16 bg-gradient-warm rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i data-lucide="sparkles" class="h-8 w-8 text-white"></i>
+                                </div>
+                                <h4 class="font-display text-lg font-semibold mb-2 group-hover:text-secondary transition-colors">Special Occasions</h4>
+                                <p class="text-muted-foreground text-sm mb-4">Celebration-ready pieces for life's important moments</p>
+                                <button class="hero-button-outline">See Examples</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="text-center mt-16">
+                        <button class="hero-button group mr-4">
+                            Book Consultation
+                            <i data-lucide="calendar" class="ml-2 h-5 w-5"></i>
+                        </button>
+                        <button class="hero-button-outline group">
+                            View Pricing
+                            <i data-lucide="info" class="ml-2 h-5 w-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="py-20 bg-gradient-primary text-white">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                            <!-- Content -->
+                            <div>
+                                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                                    Style Notes & <span class="text-gradient">Studio Stories</span>
+                                </h2>
+                                <p class="font-body text-lg text-white-90 mb-8 leading-relaxed">
+                                    Sign up for exclusive drops, styling tips, and behind-the-scenes content from our creative team. 
+                                    We share what inspires us—and what's coming next.
+                                </p>
+                                
+                                <div class="space-y-4 mb-8">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                        <span class="font-body text-white-80">First access to new collections</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                        <span class="font-body text-white-80">Exclusive styling tutorials</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                        <span class="font-body text-white-80">Behind-the-scenes content</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                        <span class="font-body text-white-80">Special subscriber discounts</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Newsletter Form -->
+                            <div class="newsletter-card bg-white-10 backdrop-blur-sm border-white-20 shadow-elegant">
+                                <div class="p-8">
+                                    <div class="text-center mb-6">
+                                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4 shadow-orange">
+                                            <i data-lucide="mail" class="h-8 w-8 text-white"></i>
+                                        </div>
+                                        <h3 class="font-display text-2xl font-bold text-white mb-2">
+                                            Join the List
+                                        </h3>
+                                        <p class="font-body text-white-80">
+                                            Be the first to know about new drops and exclusive content.
+                                        </p>
+                                    </div>
+
+                                    <form class="space-y-4" id="newsletter-form">
+                                        <div>
+                                            <input type="text" placeholder="Your name" class="newsletter-input" id="name-input">
+                                        </div>
+                                        <div>
+                                            <input type="email" placeholder="Your email address" class="newsletter-input" id="email-input">
+                                        </div>
+                                        
+                                        <button type="submit" class="w-full hero-button group" style="font-size: 1rem; padding: 1rem;">
+                                            Subscribe Now
+                                            <i data-lucide="arrow-right" class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"></i>
+                                        </button>
+                                    </form>
+
+                                    <p class="text-xs text-white-60 text-center mt-4">
+                                        By subscribing, you agree to our privacy policy. Unsubscribe anytime.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-foreground text-background py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Brand -->
+                    <div class="lg:col-span-1">
+                        <div class="mb-6">
+                            <h3 class="font-display text-2xl font-bold text-white mb-4">TOMIKE COUTURE</h3>
+                            <p class="font-body text-gray-300 mb-6 leading-relaxed">
+                                Where African heritage meets modern elegance. Crafting contemporary fashion that celebrates culture and confidence.
+                            </p>
+                        </div>
+                        
+                        <!-- Contact Info -->
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="mail" class="h-5 w-5 text-secondary"></i>
+                                <span class="font-body text-gray-300">hello@tomikecouture.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="phone" class="h-5 w-5 text-secondary"></i>
+                                <span class="font-body text-gray-300">+234 (0) 123 456 7890</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="map-pin" class="h-5 w-5 text-secondary"></i>
+                                <span class="font-body text-gray-300">Lagos, Nigeria</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shop -->
+                    <div>
+                        <h4 class="font-display text-lg font-semibold text-white mb-6">Shop</h4>
+                        <ul class="space-y-3">
+                            <li><a href="/women" class="footer-link">Women's Collection</a></li>
+                            <li><a href="/men" class="footer-link">Men's Collection</a></li>
+                            <li><a href="/custom" class="footer-link">Custom Orders</a></li>
+                            <li><a href="/new-arrivals" class="footer-link">New Arrivals</a></li>
+                            <li><a href="/sale" class="footer-link">Sale</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div>
+                        <h4 class="font-display text-lg font-semibold text-white mb-6">Company</h4>
+                        <ul class="space-y-3">
+                            <li><a href="/about" class="footer-link">About Us</a></li>
+                            <li><a href="/journal" class="footer-link">Journal</a></li>
+                            <li><a href="/community" class="footer-link">Community</a></li>
+                            <li><a href="/careers" class="footer-link">Careers</a></li>
+                            <li><a href="/sustainability" class="footer-link">Sustainability</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div>
+                        <h4 class="font-display text-lg font-semibold text-white mb-6">Support</h4>
+                        <ul class="space-y-3">
+                            <li><a href="/contact" class="footer-link">Contact Us</a></li>
+                            <li><a href="/shipping" class="footer-link">Shipping & Returns</a></li>
+                            <li><a href="/size-guide" class="footer-link">Size Guide</a></li>
+                            <li><a href="/care" class="footer-link">Care Instructions</a></li>
+                            <li><a href="/faq" class="footer-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="mt-12 pt-8 border-t border-gray-700">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div class="flex space-x-6 mb-6 md:mb-0">
+                            <a href="https://instagram.com/tomikecouture" class="social-link">
+                                <i data-lucide="instagram" class="h-6 w-6"></i>
+                            </a>
+                            <a href="https://facebook.com/tomikecouture" class="social-link">
+                                <i data-lucide="facebook" class="h-6 w-6"></i>
+                            </a>
+                            <a href="https://twitter.com/tomikecouture" class="social-link">
+                                <i data-lucide="twitter" class="h-6 w-6"></i>
+                            </a>
+                            <a href="https://youtube.com/tomikecouture" class="social-link">
+                                <i data-lucide="youtube" class="h-6 w-6"></i>
+                            </a>
+                        </div>
+
+                        <div class="text-center md:text-right">
+                            <p class="font-body text-gray-400 text-sm">
+                                © 2020 TOMIKE COUTURE. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
