@@ -58,23 +58,6 @@ body {
     color: hsl(var(--foreground));
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    padding-top: 80px; /* Adjust based on your header height */
-}
-
-html {
-    font-size: 16px; /* Default base size */
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 16px; /* Smaller base size for smaller screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    html {
-        font-size: 16px; /* Larger base size for larger screens */
-    }
 }
 
 /* Typography */
